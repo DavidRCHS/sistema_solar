@@ -12,6 +12,26 @@
     align-items: center;
 }
 
+.nota
+{
+    position: fixed;
+    inset: 20px 0 20px 20px;
+    width: 97%;
+    transition: 0.5s;
+    z-index: 50;
+    display: flex;
+    justify-content: right;
+    align-items: initial;
+    z-index: 10;
+}
+
+.nota_info
+{
+    height: 120px;
+    width: 300px;
+    background-color: #a9d3ff;
+}
+
 .navegacion.open
 {
     width: 250px;
