@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="navegacion.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="navegacion">
+        <div class="menuToggle">
+            
+        </div>
+        <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li class="list active">
+        <a href="blog.html">
+            <span class="icon"><ion-icon name="contacts"></ion-icon></span>
+            <span class="text">Blog</span>
+        </a>
+        </li>
+        <li class="list">
+        <a href="#">
+            <span class="icon"><ion-icon name="camera"></ion-icon></span>
+            <span class="text">Photos</span>
+        </a>
+        </li>
+    </ul>
+    </div>
+    <div id="buscador">
+        <input id="fecha" placeholder="Buscar..." type="date">
+        <button onclick="getNotice()"><ion-icon name="search"></ion-icon></button>
+    </div>
+    <div id="noticia">
+        <img id="noticia_img" src="./img/luna.jpg">
+        <div id="noticia-text">
+            <h1 id="titulo">
+
+            </h1>
+            <p id="descripcion">
+               
+            </p>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navegacion = document.querySelector('.navegacion');
+        menuToggle.onclick = function(){
+            navegacion.classList.toggle('open');
+        }
+
+    </script>
+<script src="./blog.js"></script>    
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script></body>
+</html>

@@ -1,0 +1,70 @@
+body
+{
+    background-image: url('./img/nasa.jpg');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#buscador 
+{
+    width: 50%;
+    margin: auto;
+}
+
+#buscador input
+{
+    width: 75%;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 18px;
+    padding: 12px;
+}
+
+#buscador button
+{
+    width: 10%;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 18px;
+    padding: 12px;
+    padding-bottom: 14px;
+}
+
+#noticia
+{
+    margin: 2% 13%;
+}
+
+#noticia_img
+{
+    height: 400px;
+    width: 100%;
+    border-radius: 10%;
+}
+
+#titulo
+{
+    margin: auto;
+    width: 80%;
+    padding-top: 6%;
+}
+
+#noticia-text
+{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: auto;
+    margin-top: -6%;
+    position: sticky;
+    border-radius: 10%;
+    height: 500px;
+}
+
+#descripcion
+{
+    margin: auto;
+    width: 81%;
+    padding-top: 6%;
+}

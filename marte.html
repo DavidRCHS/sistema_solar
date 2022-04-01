@@ -6,8 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marte</title>
     <link rel="stylesheet" href="information-style.css">
+    <link rel="stylesheet" href="navegacion.css">
 </head>
 <body>
+    <div class="navegacion">
+        <div class="menuToggle">
+            
+        </div>
+        <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon"><ion-icon name="planet"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li class="list">
+        <a href="#">
+            <span class="icon"><ion-icon name="contacts"></ion-icon></span>
+            <span class="text">Blog</span>
+        </a>
+        </li>
+        <li class="list">
+        <a href="#">
+            <span class="icon"><ion-icon name="camera"></ion-icon></span>
+            <span class="text">Fotos</span>
+        </a>
+        </li>
+    </ul>
+    </div>
     <main class="marte">
         <h1 class="titulo-principal">
             Informacion Climatica de Marte
@@ -61,5 +87,14 @@
         </div>
     </main>
     <script src="information-script.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navegacion = document.querySelector('.navegacion');
+        menuToggle.onclick = function(){
+            navegacion.classList.toggle('open');
+        }
+
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
 </body>
 </html>
