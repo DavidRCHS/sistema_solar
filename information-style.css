@@ -1,2 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+:root
+{
+    --fw-ligth:300;
+    --fw-normal:400;
+    --fw-semi:500;
+    --fw-bold:700;
+    --fs-h1:1.5rem;
+    --fw-h2:2.25rem;
+    --fw-body:1rem;
+    --fs-xl: 4.5rem;
+    --clr-light:#fff;
+    --clr-gray:#989898;
+    --clr-dark:#444;
+    --clr-accente:#D06D6D;
+    --clr-accente-dark:#613131;
+}
 
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-image: url(./img/mars.jpg);
+    height: 100vh;
+    overflow: hidden;
+    color: var(--clr-light);
+}
+
+h1,h2,h3
+{
+    line-height: 1;
+}
+
+a
+{
+    color: var(--clr-accente);
+    
+}
+
+a:hover{
+    color: var(--clr-accente-dark);
+}
+
+.titulo-principal
+{
+    font-size: var(--fs-h1);
+    font-weight:var(--fw-ligth);
+    text-transform:uppercase;
+    color:var(--clr-accente);
+    letter-spacing: 2px;
+
+    grid-column: 1 / -1;
+}
+
+.seccion-titulo
+{
+    font-size: var(--fw-h2);
+    font-weight: var(--fw-bold);
+    margin: 0;
+}
+
+.titulo-dia
+{
+font-size: var(--fs-xl);
+}
+
+.lectura
+{
+    font-size: var(--fs-h1);
+    margin: 0;
+    color: var(--clr-gray);
+}
+
+.marte
+{
+    background: rgba(0, 0, 0, .7);
+    padding: 2em;
+    max-width: 1000px;
+    margin: 4em 0 0 4em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+}
+
+.dia
+{
+    grid-column: 1 / 2;
+}
+
+.fecha
+{
+    font-size: var(--fw-h2);
+    margin: 0;
+    color: var(--clr-gray);
+    font-weight: var(--fw-ligth);
+}
+
+.temperatura
+{
+    --border:solid .25em var(--clr-accente-dark);
+    grid-column: 2 / 3;
+    border-left: var(--border);
+    border-right: var(--border);
+    padding: 0 2em ;
+}
+
+.viento
+{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    align-self: start;
+}
+
+.viento .seccion-titulo,.viento .lectura
+{
+    grid-column: 2 / 3;
+    
+}
+
+.direccion-viento
+{
+    --size:6rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    display: grid;
+    place-items: center;
+    grid-row: 1 / span 2;
+}
+
+.arrow
+{
+    --direccion:0deg;
+    --size:1rem;
+    height: calc(var(--size)*3);
+    width: var(--size);
+    background: var(--clr-accente-dark);
+    clip-path: polygon(50% 0, 0% 100% , 100% 100%);
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: bottom center;
+    transition: transform 500ms ease;
+}
+
+.info
+{
+    grid-column: 1 / 3;
+}
+
+.sr-only
+{
+    display: none;
+}
