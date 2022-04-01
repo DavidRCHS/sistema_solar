@@ -1,6 +1,6 @@
 body
 {
-    background-image: url('./img/nasa.jpg');
+    background-image: url('../img/nasa.jpg');
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 
